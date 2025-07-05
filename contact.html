@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Charles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="stylesheet" href="contact.css">
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">
+      Have a project in mind or just want to say hello? Fill the form below and I’ll get back to you!
+    </p>
+
+    <img src="contact.jpg" alt="">
+
+    <form class="contact-form" action="https://formspree.io/f/mgvybkkq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p style="text-align: center; color: gray;">© 2025 Charles. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

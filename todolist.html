@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <style>
+    body {
+      font-family: Arial;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+    input, select, button {
+      padding: 10px;
+      width: 100%;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+    .task {
+      background: #f0f0f0;
+      padding: 10px;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+
+<h2>📝 My To-Do List</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter your task">
+  <select id="categorySelect">
+    <option value="Work">Work</option>
+    <option value="Study">Study</option>
+    <option value="Personal">Personal</option>
+  </select>
+  <button onclick="addTask()">Add Task</button>
+
+  <h3>📋 Tasks:</h3>
+  <div id="tasklist"></div>
+  <script src="todo.js"></script>
+</body>
+</html>

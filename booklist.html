@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book List</title>
+</head>
+<style>
+    body { font-family: Arial; max-width: 500px; margin: 30px auto; }
+    input, button { padding: 10px; width: 100%; margin: 8px 0; font-size: 16px; }
+    .book { background: #f0f0f0; padding: 10px; margin: 5px 0; }
+  </style>
+<body>
+    <h2>📚 My Book List</h2>
+
+  <input type="text" id="title" placeholder="Book Title">
+  <input type="text" id="author" placeholder="Author Name">
+  <button onclick="addBook()">Add Book</button>
+  <button onclick="showBooks()">Show Books</button>
+  <button onclick="clearBooks()">Clear All</button>
+
+  <h3>📖 Saved Books:</h3>
+  <div id="booklist"></div>
+  <script src="book.js"></script>
+</body>
+</html>
